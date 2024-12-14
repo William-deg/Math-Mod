@@ -12,6 +12,11 @@ The module mathWiz is available to __install via pip__:
 pip install mathWiz
 ```
 
+Use the following command to upgrade to the most recent version (__Recommended__ due to bug fixes)
+```sh
+pip install --upgrade mathWiz
+```
+
 ## Version
 
 MathWiz is currently on version 0.1.1
