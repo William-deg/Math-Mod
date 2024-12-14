@@ -18,7 +18,7 @@ classifiers = [
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent"
 ]
-urls = {"Changelog" = https://github.com/William-deg/mathWiz/blob/master/CHANGELOG.md}
+urls = {"Changelog" = "https://github.com/William-deg/mathWiz/blob/master/CHANGELOG.md"}
 [tool.setuptools]
 packages = ["mathWiz"]
 
