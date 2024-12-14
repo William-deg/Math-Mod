@@ -21,7 +21,7 @@ MathWiz is currently on version 0.1.1
     - Matrix scaling / multiplication with ints or floats not working
     - Inverses of 2x2 matrices not returning properly
 
-See Changelogs on the githfor more information
+See Changelogs in (CHANELOG.md) for more information
 
 ## Features
 
