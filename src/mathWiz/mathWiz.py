@@ -310,7 +310,6 @@ class Polynomial:
         return string
 
 # Matrixes
-#TODO: FIX error where you cant take determinant of a 2x2 matrix 
 class Matrix:
     def __init__(self, matrix: list[list[_SupportsFloatOrIndex]]):
         self.matrix = matrix
