@@ -1,5 +1,16 @@
 # Changelog - mathWiz
 
+## [0.2.0] New Features - 14/01/2025
+
+Added new features into the module. These Include:
+
+- Simultaneous Equations:
+    - Solving of any order
+
+- Matrices:
+    - Adjoint Matrix Function
+    - Cofactor Matrix Function
+
 ## [0.1.1] Bug Fixes - 14/12/2024
 
 - Bug Fixes:

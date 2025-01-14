@@ -12,19 +12,23 @@ The module mathWiz is available to __install via pip__:
 pip install mathWiz
 ```
 
-Use the following command to upgrade to the most recent version (__Recommended__ due to bug fixes)
+Use the following command to upgrade to the most recent version (__Recommended__ due to bug fixes and new features)
 ```sh
 pip install --upgrade mathWiz
 ```
 
 ## Version
 
-MathWiz is currently on version 0.1.1
+MathWiz is currently on version 0.2.0
 
 #### Latest Additions
-- Bug Fixes:
-    - Matrix scaling / multiplication with ints or floats not working
-    - Inverses of 2x2 matrices not returning properly
+
+- Simultaneous Equations:
+    - Solving of any order
+
+- Matrices:
+    - Adjoint Matrix Function
+    - Cofactor Matrix Function
 
 See Changelogs in (CHANELOG.md) for more information
 
@@ -52,7 +56,13 @@ See Changelogs in (CHANELOG.md) for more information
 - Multiplication
 - Determinants
 - Transposition
+- Adjoint Matrix Function
+- Cofactor Matrix Function
 - Inverse Matrices
+
+#### Simulataneous Equations
+
+- Solving with any amount of variables
 
 #### Vectors
 
@@ -197,6 +207,13 @@ matrix.inverse()*matrix
 | 0.0   0.0  1.0  -0.0 |
 |_0.0   0.0  0.0   1.0_|
 """
+```
+
+#### Simultaneous Equations
+
+```python
+solveSim('2x+3y-z=7', '-x+4y+2z =1', '3x-5y+z=-8')
+# [{'x': 0.36}, {'y': 1.39}, {'z': -2.11}]
 ```
 
 #### Vectors
