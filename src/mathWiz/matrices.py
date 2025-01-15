@@ -4,7 +4,8 @@ import numpy
 
 _SupportsFloatOrIndex: TypeAlias = SupportsFloat | SupportsIndex
 
-# Matrixes
+# Matrices
+
 class Matrix:
     def __init__(self, matrix: list[list[_SupportsFloatOrIndex]]):
         self.matrix = matrix
@@ -122,8 +123,22 @@ class Matrix:
                 column.append(self.matrix[j][i])
             newMatrix.append(column)
         return Matrix(newMatrix)
-    
-    #TODO: Implement function for cofactors and the adjoint* in future versions (code in the inverse function) 
+
+    def cofactorMatrix(self) -> "Matrix":
+        if self.rows == 2:
+            co_matrix = [[self.matrix[1][1], -self.matrix[1][0]], [-self.matrix[0][1], self.matrix[0][0]]]
+            return Matrix(co_matrix)
+        else:
+            co_matrix = [[0 for _ in range(self.columns)] for _ in range(self.rows)]
+            for i in range(self.rows):
+                for j in range(self.columns):
+                    submatrix = [row[:j] + row[j + 1:] for row in (self.matrix[:i] + self.matrix[i + 1:])]
+                    subMatrix = Matrix(submatrix)
+                    co_matrix[i][j] = ((-1)**(i+j+2))*(subMatrix.determinant())
+            return co_matrix    
+
+    def adjointMatrix(self) -> "Matrix":
+        return self.cofactorMatrix().transpose()
 
     def inverse(self) -> "Matrix":
         if self.rows == self.columns:
