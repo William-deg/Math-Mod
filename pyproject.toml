@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "mathWiz"
-version = "0.2.0"
+version = "0.2.2"
 description = "A python math module designed for complex math."
 readme = "README.md"
 authors = [
@@ -18,9 +18,8 @@ classifiers = [
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent"
 ]
+
 urls = {"Changelog" = "https://github.com/William-deg/mathWiz/blob/master/CHANGELOG.md"}
-[tool.setuptools]
-packages = ["mathWiz"]
 
 [tool.setuptools.package-dir]
 "" = "src"

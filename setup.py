@@ -2,8 +2,9 @@ from setuptools import setup, find_packages
 
 setup(
     name='mathWiz',
-    version='0.2.0',
-    packages=find_packages(),
+    version='0.2.2',
+    packages=find_packages(where="src"),
+    package_dir={"": "src"},
     install_requires=[],
     description='A python math module designed for complex math.',
     long_description=open('README.md').read(),

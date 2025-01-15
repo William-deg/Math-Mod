@@ -19,7 +19,7 @@ pip install --upgrade mathWiz
 
 ## Version
 
-MathWiz is currently on version 0.2.0
+MathWiz is currently on version 0.2.2
 
 #### Latest Additions
 

@@ -1,5 +1,15 @@
 # Changelog - mathWiz
 
+## [0.2.2] Bug Fixes - 15/01/2025
+
+- Bug Fixes:
+    - Module rebuilt with the correct parameters again
+
+## [0.2.1] Bug Fixes - 15/01/2025
+
+- Bug Fixes:
+    - Module rebuilt with the right parameters
+
 ## [0.2.0] New Features - 14/01/2025
 
 Added new features into the module. These Include:
