@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "mathWiz"
-version = "0.1.1"
+version = "0.2.0"
 description = "A python math module designed for complex math."
 readme = "README.md"
 authors = [
